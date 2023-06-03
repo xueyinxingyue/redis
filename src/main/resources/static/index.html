@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script>
+        //页面刷新后，向服务器号发送请求
+        $(function () {
+            $.get("/count/1",function (data) {
+                $("#count").html(data)
+            })
+        })
+    </script>
+
+</head>
+<body>
+阅读量：<span id="count">0</span>
+<br>
+位于南半球的肯尼亚西南部与坦桑尼亚交界地区的马赛马拉，每年雨季,即12月到次年5月,动物散布在从塞伦盖蒂国家公园(Serengeti National Park)东南面一直延伸到恩戈罗恩戈罗（Ngorongoro）保护区的无边草原上.充足的雨水为它们提供着充足的食物. 5月中后期,随着旱季来临,数以百万计的动物向塞伦盖蒂的西北面迁徙,追逐水源和青草,百万只角马是迁徙的主力军。
+</body>
+</html>
